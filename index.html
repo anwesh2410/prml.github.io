@@ -68,6 +68,14 @@
             color: #fff;
             text-align: center;
             padding: 20px 0;
+        .push {
+            transition: transform .2s; /* Animation duration and timing function */
+            }
+            
+        .push:active {
+        transform: translateY(2px); /* Push the button down by 2px when it is being pressed */
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Add a shadow to simulate a pressed effect */
+            }
         }
     </style>
 </head>
@@ -100,7 +108,7 @@
             <a href="#">Dataset</a>
             <a href="#">Poster</a>
             <a href="#">Slides</a>
-            <a href="https://www.youtube.com/watch?v=SKIXCPn2xB0">Short Talk</a>
+            <a href="https://www.youtube.com/watch?v=SKIXCPn2xB0" class="btn btn-primary push">Short Talk</a>
         </div>
     </section>
     <section>
